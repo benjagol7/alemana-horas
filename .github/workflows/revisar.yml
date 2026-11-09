@@ -1,13 +1,19 @@
 name: Revisar horas Clinica Alemana
 
+# Sin "schedule": lo dispara cron-job.org llamando a la API de GitHub.
+# El botón "Run workflow" sigue funcionando para correrlo a mano.
 on:
-  schedule:
-    - cron: "7,17,27,37,47,57 * * * *"
   workflow_dispatch:
+
+# Si una corrida sigue en curso cuando llega la siguiente, espera en vez de pisarse.
+concurrency:
+  group: revisar-horas
+  cancel-in-progress: false
 
 jobs:
   revisar:
     runs-on: ubuntu-latest
+    timeout-minutes: 8
     steps:
       - uses: actions/checkout@v4
 
