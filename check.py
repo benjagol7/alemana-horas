@@ -17,26 +17,27 @@ DOCTORES = [
         "url": "https://reserva.clinicaalemana.cl/profesional/maria-francisca-jaime-mendez-5829339",
         "dias": 20,
     },
-    {
-        "nombre": "Lorena Marcela Rodriguez Gonzalez",
-        "url": "https://reserva.clinicaalemana.cl/profesional/lorena-marcela-rodriguez-gonzalez-5173649",
-        "dias": 20,
-    },
-    {
-        "nombre": "Yalda Cecilia Lucero Alvarez",
-        "url": "https://reserva.clinicaalemana.cl/profesional/yalda-cecilia-lucero-alvarez-6035113",
-        "dias": 20,
-    },
-    {
-        "nombre": "Maria Eugenia Arancibia Soto",
-        "url": "https://reserva.clinicaalemana.cl/profesional/maria-eugenia-arancibia-soto-2602",
-        "dias": 20,
-    },
-    {
-        "nombre": "Maria Cecilia Riutort Kreft",
-        "url": "https://reserva.clinicaalemana.cl/profesional/maria-cecilia-riutort-kreft-5468057",
-        "dias": 20,
-    },
+    # --- En pausa mientras probamos con una sola doctora (quitar los # para reactivar) ---
+    # {
+    #     "nombre": "Lorena Marcela Rodriguez Gonzalez",
+    #     "url": "https://reserva.clinicaalemana.cl/profesional/lorena-marcela-rodriguez-gonzalez-5173649",
+    #     "dias": 20,
+    # },
+    # {
+    #     "nombre": "Yalda Cecilia Lucero Alvarez",
+    #     "url": "https://reserva.clinicaalemana.cl/profesional/yalda-cecilia-lucero-alvarez-6035113",
+    #     "dias": 20,
+    # },
+    # {
+    #     "nombre": "Maria Eugenia Arancibia Soto",
+    #     "url": "https://reserva.clinicaalemana.cl/profesional/maria-eugenia-arancibia-soto-2602",
+    #     "dias": 20,
+    # },
+    # {
+    #     "nombre": "Maria Cecilia Riutort Kreft",
+    #     "url": "https://reserva.clinicaalemana.cl/profesional/maria-cecilia-riutort-kreft-5468057",
+    #     "dias": 20,
+    # },
 ]
 
 MESES = {
