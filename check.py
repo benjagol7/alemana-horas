@@ -34,7 +34,7 @@ DOCTORES = [
     {
         "nombre": "Maria Cecilia Riutort Kreft",
         "url": "https://reserva.clinicaalemana.cl/profesional/maria-cecilia-riutort-kreft-5468057",
-        "dias": 7,
+        "dias": 20,
     },
 ]
 
