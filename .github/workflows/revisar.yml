@@ -13,7 +13,7 @@ concurrency:
 jobs:
   revisar:
     runs-on: ubuntu-latest
-    timeout-minutes: 8
+    timeout-minutes: 5
     steps:
       - uses: actions/checkout@v4
 
@@ -21,20 +21,11 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Cachear navegador
-        uses: actions/cache@v4
-        with:
-          path: ~/.cache/ms-playwright
-          key: playwright-chromium-v1
-
       - name: Instalar dependencias
-        run: |
-          pip install playwright requests
-          python -m playwright install --with-deps chromium
+        run: pip install requests
 
       - name: Revisar disponibilidad
         env:
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
           EMAIL_TO: ${{ secrets.EMAIL_TO }}
-          RUT_PACIENTE: ${{ secrets.RUT_PACIENTE }}
         run: python check.py
